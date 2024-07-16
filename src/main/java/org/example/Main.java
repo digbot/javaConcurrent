@@ -1,13 +1,10 @@
 package org.example;
 
-/*
-    this is is a hot fix  code
- */
+/**
+    this is a hot fix  code
+*/
 public class Main {
-
     public static void main(String[] args) {
-
-        CompletableFutureExample.example0();
-
+        CompletableFutureExample.exampleSupplyThenApply0();
     }
 }

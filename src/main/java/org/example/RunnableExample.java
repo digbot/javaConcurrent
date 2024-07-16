@@ -16,13 +16,11 @@ import java.util.concurrent.CompletableFuture;
  */
 public class RunnableExample {
 
-
-
-
-        public static void example0()  {
+    public static void example0()  {
         Runnable r1 = new Runnable() {
             @Override
             public void run() {
+
                 System.out.println("Hello from a thread");
             }
         };
