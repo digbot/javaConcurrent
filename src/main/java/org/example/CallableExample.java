@@ -3,10 +3,7 @@ package org.example;
 import java.util.concurrent.*;
 
 public class CallableExample {
-
-
     public static void example1() {
-
         Callable task = () -> {
             try {
                 TimeUnit.SECONDS.sleep(2);
@@ -35,5 +32,4 @@ public class CallableExample {
         System.out.println("Is done? " + future.isDone());
         System.out.println(result);
     }
-
 }
