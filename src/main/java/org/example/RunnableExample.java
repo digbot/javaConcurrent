@@ -36,9 +36,9 @@ public class RunnableExample {
     }
 
     public static void exampleRunnable1()  {
-        MyRunnable myRunnable = new MyRunnable(10);
-        Thread t = new Thread(myRunnable);
-        t.start();
+        //MyRunnable myRunnable = new MyRunnable(0);
+        //Thread t = new Thread(myRunnable);
+        //t.start();
     }
 
     public static void example1() {

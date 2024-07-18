@@ -2,15 +2,17 @@ package org.example;
 
 public class MyRunnable implements Runnable {
 
-    private int var;
+    private   int count = 0;
 
-    public MyRunnable(int var) {
-        this.var = var;
-    }
-
+    @Override
     public void run() {
-        // code in the other thread, can reference "var" variable
-        System.out.println("Hello from a MyRunnable->run");
+        for(int i= 0; i < 1_000_000; i++) {
+            synchronized (this) {
+                this.count++;
+            }
+        }
+
+        System.out.println(  Thread.currentThread().getName() + ":" + this.count);
     }
 
 }
